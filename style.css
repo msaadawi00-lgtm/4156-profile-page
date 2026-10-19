@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-header-bg-color: #1F3B65;
+    --main-primary-txt-color: white; 
+    --main-h2-bg-color: #E4EBF6;
+    --main-border-color: #8EB9F3;
+    --main-second-section-bg-color: #E2F9EB;
+    --main-second-section-txt-color: #14803F;
+    --main-third-section-bg-color: #FEF2E4;
+    --main-third-section-txt-color: rgb(141, 57, 8);
+    --main-footer-bg-color: #1F3B67;
+
+}
+
 body {
     font-family: sans-serif;
     padding: 21px;
@@ -12,34 +25,30 @@ body {
 }
 
 header {
-    background-color: #1F3B65;
+    background-color: var(--main-header-bg-color);
     padding: 21px;
     
     h1 {
-        color: white;
-    }
-
-    p {
-        color: #8EB9F3;
+        color: var(--main-primary-txt-color);
     }
 }
 
 main {
 
-    border: 1px solid #8EB9F3;
+    border: 1px solid var(--main-border-color);
     margin-block-start: 20px;
     padding: 18px;
 }
 
 h2 {
-    background-color: #E4EBF6;
+    background-color: var(--main-h2-bg-color);
     padding: 18px;
 }
 
 section:nth-of-type(1) {
 
     p {
-        border: 1px #8EB9F3 solid;
+        border: 1px var( --main-border-color) solid;
         padding: 18px;
     }
 }
@@ -47,9 +56,9 @@ section:nth-of-type(1) {
 section:nth-of-type(2) {
 
     p {
-        background-color: #E2F9EB;
-        color: #14803F;
-        border: 1px solid #BFF2D3;
+        background-color: var(--main-second-section-bg-color);
+        color: var( --main-second-section-txt-color);
+        border: 1px solid;
         padding: 18px;
         font-weight: 550;
     }
@@ -57,18 +66,18 @@ section:nth-of-type(2) {
 
 section:nth-of-type(3) {
     p {
-        background-color: #FEF2E4;
-        color: rgb(141, 57, 8);
-        border: 1px solid #e6ba8c;
+        background-color: var(--main-third-section-bg-color);
+        color: var(--main-third-section-txt-color);
+        border: 1px solid;
         padding: 18px;
         line-height: 25px;
     }
 }
 
 footer {
-    border: 1px solid #1F3B67;
-    background-color: #1F3B67;
-    color: white;
+    border: 1px solid;
+    background-color: var(--main-footer-bg-color);
+    color: var(--main-primary-txt-color);
     text-align: center;
     padding: 18px;
 }
